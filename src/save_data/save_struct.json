@@ -1,0 +1,40 @@
+{
+  "cards": [
+      {
+          "id": 1,
+          "front": {
+              "text": "some name",
+              "picFileLink": "./pics/<some picture>"
+          },
+
+          "back": {
+              "text": "some name",
+              "picFileLink": "./pics/<some picture>"
+          }
+      }
+  ],
+
+  "decks": [
+      {
+          "id": 1,
+          "name": "some subject",
+          "cards": [1, 2]
+
+      }
+  ],
+
+  "sessions": [
+      {
+          "id": 1,
+          "associated deck": 1,
+          "cards correct": [1],
+          "cards wrong": [2],
+          "cards not given": [3]
+      }
+  ]
+
+
+
+
+
+}

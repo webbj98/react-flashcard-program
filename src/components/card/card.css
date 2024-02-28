@@ -1,0 +1,9 @@
+.card {
+  position: relative;
+  color: black;
+  outline-color: black;
+  height: 200;
+  width: fit-content;
+  background: white;
+  display: flex;
+}

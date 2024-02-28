@@ -1,13 +1,23 @@
 import { MemoryRouter as Router, Routes, Route } from 'react-router-dom';
 import icon from '../../assets/icon.svg';
 import './App.css';
+import { LoadSaveData, Test } from '../save_data/load_save';
+import Card from '../components/card/card';
 
 function Hello() {
+  LoadSaveData();
+  console.log(Test());
+  console.log('yay');
+
   return (
     <div>
       <div className="Hello">
         <img width="200" alt="icon" src={icon} />
       </div>
+      <div>
+        <Card frontText="some front text" backText="some back text" />
+      </div>
+
       <h1>electron-react-boilerplate</h1>
       <div className="Hello">
         <a
