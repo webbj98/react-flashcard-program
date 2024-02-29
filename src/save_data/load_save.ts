@@ -7,11 +7,15 @@ export function LoadSaveData() {
   console.log(`saveData`, saveData);
 
   const allCards: Card[] = [];
-  saveData.cards.map((card) => allCards.push(new Card(card.id, card.front.text, card.back.text)));
+  saveData.cards.map((card) =>
+    allCards.push(new Card(card.id, card.front.text, card.back.text)),
+  );
   console.log(`allCards`, JSON.stringify(allCards));
 
   const allDecks: Deck[] = [];
-  saveData.decks.map((deck) => allDecks.push(new Deck(deck.id, deck.name, deck.cards)));
+  saveData.decks.map((deck) =>
+    allDecks.push(new Deck(deck.id, deck.name, deck.cards)),
+  );
   return {
     cards: allCards,
     decks: allDecks,
